@@ -2,22 +2,24 @@
 **AUTHORS: KAREN KIERNAN (‘KAREN’), DINGKAI GUO (‘BOB’), MENGYU LI (‘LI’) (GROUP 27)**
 
 ## Introduction 
-Group 27 on the QMUL Information Retrieval module (ECS736P) constructed a search engine for the group assignment Semester B. The project
-repurposed a famous but old text classification dataset, the Reuters 21578, as a fully annotated 
+Group 27 on the QMUL Information Retrieval module (ECS736P) constructed a **search engine** for the group assignment Semester B. The project
+repurposed a famous but old text classification dataset, the **Reuters-21578**, as a fully annotated 
 Information Retrieval dataset. This was achieved by using an LLM for relevance annotation.
 
-## Files: Datasets and jupyter notebooks
- - EXPLAIN THE FILE STRUCTURE IN THE REPOSITORY HERE
+**BM25 vs BM25F**
 
-
-## BM25 vs BM25F
 BM25 remains an industry standard as a first pass key word matching filter, and is a component of larger 
 search engines. The Reuters dataset has a structured text format e.g. article body and article title. This 
 allows us to explore the use of BM25F in comparison with BM25.
 
-## LLM relevance score labels
+**LLM relevance score labels**
+
 We used ChatGPT to generate relevance scores for the Reuters 21578 dataset for the given set of 
 queries. This served as the ‘ground truth’ of document relevance rankings. 
+
+
+## Repository structure: Datasets and jupyter notebooks
+ - EXPLAIN THE FILE STRUCTURE IN THE REPOSITORY HERE
 
 ## Tools used to develop search engine
 A variety of tools will be used at each stage, subject to evaluation during the implementation phase. The 
