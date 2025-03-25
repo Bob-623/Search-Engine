@@ -2,10 +2,9 @@
 **AUTHORS: KAREN KIERNAN (‘KAREN’), DINGKAI GUO (‘BOB’), MENGYU LI (‘LI’) (GROUP 27)**
 
 ## Introduction 
-This report outlines a review of literature on search engine design and proposes an architecture for 
-repurposing a famous but old text classification dataset, the Reuters 21578, as a fully annotated 
-Information Retrieval dataset. This will be achieved by taking advantage of the recent trend in using an 
-LLM for relevance annotation of large datasets.
+Group 27 on the QMUL Information Retrieval module (ECS736P) constructed a search engine for the group assignment Semester B. The project
+repurposed a famous but old text classification dataset, the Reuters 21578, as a fully annotated 
+Information Retrieval dataset. This was achieved by using an LLM for relevance annotation.
 
 ## Files: Datasets and jupyter notebooks
  - EXPLAIN THE FILE STRUCTURE IN THE REPOSITORY HERE
