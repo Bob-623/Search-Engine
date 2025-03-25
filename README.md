@@ -45,16 +45,21 @@ Run the test set of queries separately using two routes: BM25 and BM25F. BM25F w
 ### Step 4. Use an LLM to create a ‘golden standard’ ranking of documents
 ChatGPT was used to assign a 1-5 relevance score to all documents in dataset for each test query. These are:
 
-"Bank profit report for Q4",                               # Q1
-"Impact of interest rate hikes on stock market",           # Q2
-"Government policies affecting technology investments",    # Q3
-"Gold rush of the digital age",                            # Q4
-"Taylor Swift global tour",  # Assume no results           # Q5
-"Climate Change Crisis",      # Assume a few results       # Q6
-"International geopolitical tensions",                     # Q7
-"The rise of computer power"                               # Q8
-"The President of the United States",                      # Q9
-"War"                                                      # Q10
+<center>
+
+| Query   |      Text      |
+|----------|:-------------:|
+| Q1 |  "Bank profit report for Q4" |
+| Q2 |    "Impact of interest rate hikes on stock market"   |
+| Q3 | "Government policies affecting technology investments" |
+| Q4 |  "Gold rush of the digital age"|
+| Q5 |    "Taylor Swift global tour"   |
+| Q6 | "Climate Change Crisis" |
+| Q7 |  "International geopolitical tensions" |
+| Q8 |    "The rise of computer power"   |
+| Q9 | "The President of the United States" |
+| Q10 | "War" |
+</center>
 
 
 ### Step 5. Evaluate performance of BM25 and BM25F vs golden standard
