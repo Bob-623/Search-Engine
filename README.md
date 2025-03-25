@@ -29,7 +29,7 @@ main tools we are likely to use are:
 used for information retrieval. A decision will be made during implementation.
 * OPTIONAL: Embedding: If this option is exercised then word embedding libraries such as GloVe will be used
 
-
+## Pipeline steps
 ### Step 1: Data Preprocessing
 The goal of data preprocessing is to clean and standardize data to facilitate efficient indexing and 
 improve search quality. Preprocessing steps included: Text Normalization, Tokenization, Stopword Removal, Stemming and Lemmatization, Term Frequency (TF) Calculation
