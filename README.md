@@ -19,7 +19,18 @@ queries. This served as the ‘ground truth’ of document relevance rankings.
 
 
 ## Repository structure: Datasets and jupyter notebooks
- - EXPLAIN THE FILE STRUCTURE IN THE REPOSITORY HERE
+ - code
+   * data_preprocess.ipynb --> it is code about how to preprocess the raw dataset
+   * index_and_test_search.ipynb --> it is code about how we do indexing to the cleaned dataset and there are a few examples of search in it
+   * interface_with_search_engine.ipynb --> it is main code of this search engine and it has a simple interface
+   * Evaluate Code....
+ - dataset
+   * LLM_labelled_data --> The golden standard which is the output of ChatGPT
+   * Reuter_test.csv --> The raw dataset
+   * cleaned_dataset --> The cleaned dataset which is the output of the code(data_preprocess.ipynb)
+   * maybe evaluation result......
+ - IR GROUP 27.pptx --> The prensentation slides of our project
+ - README.md --> introduction of the repository
 
 ## Tools used to develop search engine
 A variety of tools will be used at each stage, subject to evaluation during the implementation phase. The 
