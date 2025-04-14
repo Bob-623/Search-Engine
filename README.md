@@ -17,30 +17,20 @@ allows us to explore the use of BM25F in comparison with BM25.
 We used ChatGPT to generate relevance scores for the Reuters 21578 dataset for the given set of 
 queries. This served as the ‘ground truth’ of document relevance rankings. 
 
+## Repository Structure
 
-## Repository structure: Datasets and jupyter notebooks
- - code
-   * data_preprocess.ipynb --> it is code about how to preprocess the raw dataset
-   * index_and_test_search.ipynb --> it is code about how we do indexing to the cleaned dataset and there are a few examples of search in it
-   * interface_with_search_engine.ipynb --> it is main code of this search engine and it has a simple interface
-   * Evaluate Code....
- - dataset
-   * LLM_labelled_data --> The golden standard which is the output of ChatGPT
-   * Reuter_test.csv --> The raw dataset
-   * cleaned_dataset --> The cleaned dataset which is the output of the code(data_preprocess.ipynb)
-   * maybe evaluation result......
- - IR GROUP 27.pptx --> The prensentation slides of our project
- - README.md --> introduction of the repository
+
+
+![image](https://github.com/user-attachments/assets/48915f9c-7aac-4323-8194-b9594159e81e)
+
+
 
 ## Tools used to develop search engine
-A variety of tools will be used at each stage, subject to evaluation during the implementation phase. The 
-main tools we are likely to use are:
+The main tools used were:
 * General programming: Python – main language for calling wide variety of libraries.
-* Pre-processing: SkLearn , NLTK, SpaCy – NLP libraries.
-* Search engine: PyTerrier. We have chosen it because PyTerrier is flexible for BM25 and BM25F.
-* Golden Standard LLM: ChatGPT/Bert. ChatGPT is a widely used commercial standard. BERT is widely 
-used for information retrieval. A decision will be made during implementation.
-* OPTIONAL: Embedding: If this option is exercised then word embedding libraries such as GloVe will be used
+* Pre-processing: NLTK (stop word removal, tokenization, lowercase)
+* Search engine: PyTerrier. We chose it because PyTerrier is flexible for BM25 and BM25F.
+* Golden Standard LLM: ChatGPT
 
 ## Pipeline steps
 ### Step 1: Data Preprocessing
@@ -62,20 +52,25 @@ ChatGPT was used to assign a 1-5 relevance score to all documents in dataset for
 
 | Query   |      Text      |
 |----------|:-------------:|
-| Q1 |  "Bank profit report for Q4" |
-| Q2 |    "Impact of interest rate hikes on stock market"   |
-| Q3 | "Government policies affecting technology investments" |
-| Q4 |  "Gold rush of the digital age"|
-| Q5 |    "Taylor Swift global tour"   |
-| Q6 | "Climate Change Crisis" |
-| Q7 |  "International geopolitical tensions" |
-| Q8 |    "The rise of computer power"   |
-| Q9 | "The President of the United States" |
-| Q10 | "War" |
+| Q1 |    "Impact of interest rate hikes on stock market"   |
+| Q2 | "Government policies affecting technology investments" |
+| Q3 |  "Gold rush of the digital age"|
+| Q4 |  "International geopolitical tensions" |
+| Q5 |    "The rise of computer power"   |
+| Q6 |    "War"   |
+| Q7 |    "Japan"   |
+| Q8 |    "Merrill Lynch"   |
+| Q9 |    "Tariffs"   |
+| Q10 |    "Morgan Stanley"   |
+
+
+
 </center>
 
 
+
 ### Step 5. Evaluate performance of BM25 and BM25F vs golden standard
-3. The most appropriate metric for comparing rankings is Normalized Discounted Cumulative Gain 
+
+The most appropriate metric for comparing rankings is Normalized Discounted Cumulative Gain 
 (nDCG@k). This metric is used to evaluate the performance of each model compared to the 
 control benchmark of ChatGPT rankings, at k= 10 to 50 in increments of 10.
